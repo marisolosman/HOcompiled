@@ -1,0 +1,26 @@
+Para resolver el item 4
+
+Modifique f-main.f90 y c-sum.c segun se ve en la carpeta
+
+compilo c
+gcc -c c-sum.c
+compilo f90
+gcc f-main.f90 -c -o f-main.o
+
+linkeo
+
+gcc c-sum.o f-main.o -lgfortran -o f-main.e
+./f-main
+
+Para resolver el item 5
+
+Modifique c-main.c y f-sum.f90
+
+gcc -c f-sum.f90
+gcc -c c-main.c
+gcc f-sum.o c-main.o -o c-main.e
+
+./c-main
+
+
+no hago el 6 porque tengo poco tiempo y es el que menos voy a aplicar
